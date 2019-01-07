@@ -1,0 +1,20 @@
+body {
+    margin: 0;
+    background-color: #e6ecf0;
+}
+
+header {
+    background-color: #ffcc99;
+    margin: 0px;
+    padding: 0px;
+    border-style: solid none none none ;
+    border-top-width: 10px;
+    border-color: #ff7633;
+}
+.logo {
+    margin: 0;
+    padding-top: 5px;
+    padding-left: 50px;
+    height: 75px;
+    width: 85px;
+}

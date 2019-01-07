@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="master.css">
+  <title>Granted - Scholarships</title>
+</head>
+
+<body>
+  <div class=topBar>
+    <header id="headCss">
+      <img class="logo" src="./hh.png">
+      <ul id="nav">
+        <li><a href="/">Programs </a></li>
+        <!-- <li><a> Saved </a></li> -->
+        <li><a href="/scholarships">Scholarships</a></li>
+        <!-- <li><a href="./settingsPage.html">NOTHING BUT POSSIBLY LATER</a></li> -->
+      </ul>
+    </header>
+  </div>
+  <div class="content">
+    <div class="dropdowns">
+      <form action="/scholarships" method="post">
+        <span>University: </span>
+        <select class="university" name="university">
+          <option value="Any">Any</option>
+          <% for (var i = 0; i < universities.length; i++) { %>
+            <option value="<%= universities[i] %>">
+              <%= universities[i] %>
+            </option>
+            <% } %>
+          </select><br>
+
+          <span>Renewable: </span>
+          <select class="renewable" name="renewable">
+            <option value="Any">Any</option>
+            <option value=True>Yes</option>
+            <option value=False>No</option>
+          </select><br>
+
+          <span>Deadline: </span>
+          <select class="deadline" name="deadline">
+            <option value="Any">Any</option>
+            <option value=True>Yes</option>
+            <option value=False>No</option>
+          </select><br>
+          <input type="submit" value="Search">
+        </form>
+        <table class="table">
+          <tr>
+            <th>Name</th>
+            <th>University</th>
+            <th>Money</th>
+            <th>Deadline</th>
+          </tr>
+          <% names = Object.keys(scholarships).sort(); %>
+          <% for (var i = 0; i < names.length; i++) { %>
+            <% name = names[i]; %>
+            <tr>
+              <td class="name"><%= name %></td>
+              <td class="uni"><%= scholarships[name].university %></td>
+              <td class="money"><%= scholarships[name].money %></td>
+              <td class="deadline"><%= scholarships[name].deadline %></td>
+            </tr>
+          <% } %>
+        </table>
+    </div>
+  </div>
+</body>
+
+</html>

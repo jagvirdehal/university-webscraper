@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="master.css">
+        <title>Granted</title>
+        <script src="surveyPage.js"></script>
+    </head>
+    <body>
+        <div class=topBar>
+            <header id="headCss">
+                <img class="logo" src="./hh.png">
+                <ul id="nav">
+                    <li><a href="/">Programs</a></li>
+                    <!-- <li><a> Saved </a></li> -->
+                    <li><a href="./scholarshipsPage.html">Scholarships</a></li>
+                    <li><a href="./settingsPage.html">NOTHING BUT POSSIBLY LATER</a></li>
+                </ul>
+            </header>
+        </div>
+        <h1>About you!</h1>
+        <h2>Please complete these questions to help us better select scholarships for you</h2>
+        <center>
+        <div class="infoBoxsurvey">
+            <div class="surveyTextfields">
+                <form>
+                    <input type="text" placeholder="Name" id="pickName"> Name* <br><br>
+                    <input type="text" placeholder="School" id="pickschool"> Current School*
+                </form>
+            </div>
+            <br>
+            <div class="universityDropdowns">
+                <form>
+                    <select name="university" id="pickuniversity">
+                        <option value ="" disabled selected>Select Your University</option>
+                        <option>York</option>
+                        <option>Waterloo</option>
+                        <option>McMaster</option>
+                        <option>Toronto</option>
+
+
+                    </select>
+                    <br><br>
+                    <select name="average" id="pickAverage">
+                        <option value="" disabled selected>Grade</option>
+                        <option>You better be the presidents daughter at this point</option>
+                        <option>70-74</option>
+                        <option>75-79</option>
+                        <option>80-84</option>
+                        <option>85-89</option>
+                        <option>90-94</option>
+                        <option>94-99</option>
+                        <option>At this point anyone will give you scholarship</option>
+                    </select>
+                    <br><br>
+                    <select name="Gender" id="pickGender">
+                        <option value="" disabled selected>Gender</option>
+                        <option>Male</option>
+                        <option>Female</option>
+                    </select>
+                    <br><br>
+                    <form>
+                        <input type="text" placeholder="Volunteer" id="pickhours"> How many volunteer hours have you completed<br><br>
+                        <input type="text" placeholder="Ethinicity" id="pickethnicity"> Which ethnicity do you belong to?
+                    </form>
+                    <br>
+                </form>
+            </div>
+            </center>
+
+            <div class="surveySubmit">
+                <center> <button type="submit" onclick="saveInput()">Submit</button></center>
+            </div>
+
+        </div>
+    </body>
+</html>

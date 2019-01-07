@@ -1,0 +1,176 @@
+* {
+  font-family: Helvetica Neue, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    background-color: #86DCDD;
+}
+
+header {
+    background-color: #0B24B5;
+    margin: 0px;
+    padding: 0px;
+    border-style: solid none none none ;
+    border-top-width: 15px;
+    border-color: #0B24B5;
+}
+.logo {
+    margin: 0;
+    padding-top: 5px;
+    padding-left: 50px;
+    height: 75px;
+    width: 85px;
+}
+
+#filter{
+    padding: 10px;
+    text-align: center;
+}
+#nav li {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    list-style: none;
+    display: inline;
+    font-size: 30px;
+    color: whitesmoke;
+    overflow: hidden;
+    text-decoration: none;
+    font-family: Helvetica Neue, Helvetica, sans-serif;
+    padding: 10px;
+    text-align: center;
+    font-style: italic;
+}
+
+
+#nav li a:visited{
+    color: whitesmoke;
+    text-decoration: none;
+}
+
+#nav a:link {
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#nav li a:hover{
+    background-color: #6E1211;
+
+}
+
+#inline li{
+    display: inline-block;
+    list-style-type: none;
+
+}
+
+#announcementTag {
+    font-family: Helvetica Neue, Helvetica, sans-serif;
+	font-size: 21px;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: 4;
+	line-height: 30px;
+    padding-bottom: 20px;
+}
+
+
+.tag {
+    color: ghostwhite;
+    font-family: Helvetica Neue, Helvetica, sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 15px;
+    padding: 7px;
+}
+
+
+#clubTag {
+    background-color: #0B24B5;
+}
+
+#genderTag {
+    background-color: #ff6666;
+}
+
+#gradeTag {
+    background-color: #4dffa6;
+}
+
+#title {
+    font-family: Helvetica Neue, Helvetica, sans-serif;
+	font-size: 17px;
+	font-style: normal;
+    text-align:left;
+    border-radius: 5px;
+    background-color: ;
+    display: inline;
+}
+
+#title2 {
+    font-family: Helvetica Neue, Helvetica, sans-serif;
+	font-size: 17px;
+	font-style: normal;
+    display: inline;
+    background-color: #e5e5e5;
+    border-radius: 6px;
+    padding: 5px;
+    float: right;
+}
+
+#announcementCss {
+    padding: 30px;
+    list-style-type: none;
+    background-color: #F5F5F5;
+    margin: 15px;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+#announcementBlock {
+    list-style-type: none;
+
+}
+
+#headCss {
+    overflow: hidden;
+    background-color: #333;
+}
+
+#buttonId {
+    height: 45px;
+    width: 45px;
+    background: url(Trash_Can-513.png);
+    cursor: pointer;
+    float: right;
+    background-color: black;
+    border-radius: 50%;
+    border-width: 2px;
+    border-color: white;
+    border-style: solid;
+}
+
+.dropdowns {
+  padding: 0px 20px;
+}
+
+table {
+  /* border: 5px solid black; */
+}
+
+td {
+  border: 2px solid black;
+  padding: 2px;
+}
+
+.uni, .enrollment, .language {
+  text-align: center;
+}
+
+.program {
+  padding-right: 5px;
+}

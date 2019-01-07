@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="master.css">
+  <title>Granted - Programs</title>
+</head>
+
+<body>
+  <div class=topBar>
+    <header id="headCss">
+      <img class="logo" src="./hh.png">
+      <ul id="nav">
+        <li><a href="/">Programs </a></li>
+        <!-- <li><a> Saved </a></li> -->
+        <li><a href="/scholarships">Scholarships</a></li>
+        <!-- <li><a href="./settingsPage.html">NOTHING BUT POSSIBLY LATER</a></li> -->
+      </ul>
+    </header>
+  </div>
+  <div class="content">
+    <div class="dropdowns">
+      <form action="/" method="post">
+        <span>University: </span>
+        <select class="university" name="university">
+          <option value="Any">Any</option>
+          <% for (var i = 0; i < universities.length; i++) { %>
+            <option value="<%= universities[i] %>">
+              <%= universities[i] %>
+            </option>
+            <% } %>
+          </select><br>
+
+          <span>Enrollment: </span>
+          <select class="enrollment" name="enrollment">
+            <option value="Any">Any</option>
+            <option value="0-50">Less than 50</option>
+            <option value="50-100">50-100</option>
+            <option value="100-150">100-150</option>
+            <option value="150-200">150-200</option>
+            <option value="200-100000000">200+</option>
+          </select><br>
+
+          <span>Language: </span>
+          <select class="language" name="language">
+            <option value="Any">Any</option>
+            <option value="English">English</option>
+            <option value="French">French</option>
+          </select><br>
+          <input type="submit" value="Search">
+        </form>
+    </div>
+    <table class="table">
+      <tr>
+        <th>University</th>
+        <th>Program</th>
+        <th>Enrollment</th>
+        <th>Language</th>
+      </tr>
+      <% unis = Object.keys(programs).sort(); %>
+      <% for (var i = 0; i < unis.length; i++) { %>
+        <% university = unis[i]; %>
+        <% programList = Object.keys(programs[university]).sort(); %>
+        <% for (var j = 0; j < programList.length; j++) { %>
+          <tr>
+            <td class="uni"><%= university %></td>
+            <td class="program"><%= programList[j] %></td>
+            <td class="enrollment"><%= programs[university][programList[j]].enroll %></td>
+            <td class="language"><%= programs[university][programList[j]].language %></td>
+          </tr>
+        <% } %>
+      <% } %>
+    </table>
+  </div>
+</body>
+
+</html>
